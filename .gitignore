@@ -1,9 +1,19 @@
-# Power BI temporary files
-*.tmp
-*.temp
-*AutoRecovery*
-~$*
+﻿# Exclude raw datasets and backups
+*.csv
+*.tsv
+*.xlsx
+*.bak
 
-# OS metadata
+# Exclude Power BI source files
+*.pbix
+*.pbit
+
+# Exclude credentials and environment files
+.env
+.env.*
+config.json
+credentials.txt
+
+# OS files
 .DS_Store
 Thumbs.db
