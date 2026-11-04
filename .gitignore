@@ -1,0 +1,9 @@
+# Power BI temporary files
+*.tmp
+*.temp
+*AutoRecovery*
+~$*
+
+# OS metadata
+.DS_Store
+Thumbs.db

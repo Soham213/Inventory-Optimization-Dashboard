@@ -1,0 +1,13 @@
+expression SoldProductKeys =
+		let
+		    Source = FactInternetSales,
+		    #"Removed Other Columns" = Table.SelectColumns(Source,{"ProductKey"}),
+		    #"Removed Duplicates" = Table.Distinct(#"Removed Other Columns")
+		in
+		    #"Removed Duplicates"
+	lineageTag: 75f75e11-a2ef-47eb-b319-e514c7108201
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+
